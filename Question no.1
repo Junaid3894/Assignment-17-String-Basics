@@ -1,0 +1,16 @@
+/*1. Write a program to calculate the length of the string. (without using built-in method)*/
+
+#include<stdio.h>
+int main()
+{
+char str[20];
+int count=0;
+int i;
+printf("Enter the string :");
+fgets(str,20,stdin);
+for(i=0;str[i];i++){
+    count++;
+}
+printf("The total length of this string is %d",count-1); // because newline is also in string thats why decrement by 1 in count
+return 0;
+}
