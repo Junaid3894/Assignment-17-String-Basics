@@ -1,0 +1,25 @@
+/*6. Write a program to reverse a string.*/
+
+#include<stdio.h>
+int main()
+{
+char str[20];
+int length=0;
+int temp;
+printf("Enter the string :");
+fgets(str,20,stdin);
+// finding the length of the string
+for(int i=0;str[i];i++){
+   length++;
+}
+// logic of reversing 
+for(int i=0;i<length/2;i++){
+temp=str[i];
+str[i]=str[length-i-1];
+str[length-i-1]=temp;
+}
+// finally print
+printf("%s",&str[0]);
+
+return 0;
+}
