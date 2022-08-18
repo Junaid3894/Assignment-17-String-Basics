@@ -1,0 +1,15 @@
+/*8. Write a program in C to copy one string to another string.*/
+
+#include<stdio.h>
+int main()
+{
+char str[20];
+char copystr[20];
+printf("Enter the string :");
+fgets(str,20,stdin);
+for(int i=0;str[i];i++){
+   copystr[i]=str[i];
+}
+printf("Your dublicate string is  %s",&copystr[0]);
+return 0;
+}
